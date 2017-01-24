@@ -1,0 +1,33 @@
+<!--
+<ul ng-controller="categorydetails" ng-init="showsubData()">
+
+    <li ng-repeat="i in datalists1">
+            {{i}}
+        </li>
+    </ul> 
+-->
+<span><a>Sub Categories-></a></span>
+<div class="rightsection" ng-controller="categorydetails" ng-init="showsubData()">
+
+    <ul>
+        <li class="eachcategory" ng-repeat="i in cakesutypes | pagination: curPage * pageSize | limitTo: pageSize">
+            <a href="#/category/subcategory/{{i.id}}">{{i.name}}</a> 
+        </li>
+    </ul> 
+    <div class="prevnextbtn" ng-show="cakesutypes.length">
+                        <ul class="prevnextbtnul">
+                            <li>
+                                <button type="button" class="nxtbtn" ng-disabled="curPage == 0"
+                                        ng-click="curPage = curPage - 1"> &lt; PREV</button>
+                            </li>
+                            <li>
+                                <span>Page {{curPage + 1}} of {{ numberOfPages1()}}</span>
+                            </li>
+                            <li>
+                                <button type="button" class="prebtn"
+                                        ng-disabled="curPage >= cakesutypes.length / pageSize - 1"
+                                        ng-click="curPage = curPage + 1">NEXT &gt;</button>
+                            </li>
+                        </ul>
+                    </div>
+</div>

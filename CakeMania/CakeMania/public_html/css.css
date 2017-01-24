@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2016, 5:00:10 PM
+    Author     : 513330
+*/
+* {
+    box-sizing: border-box;
+}
+header{
+    height: 150px;
+    background-color: #410c0c;
+    
+}
+body{
+    background-color: aliceblue;
+     max-width:800px;
+    margin: auto;
+     color: #ffffff; 
+    
+}
+.container{
+    overflow: auto;
+    border: 2px solid black;
+    height: 600px;
+    width: 100%;
+    height: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif ;
+    
+}
+nav{
+    margin-top: 120px;
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: opx;
+}
+nav ul li{
+    display:inline;
+    padding: 5px 5px 5px 5px;
+    
+}
+nav ul li a{
+   color: #ffffff; 
+   text-decoration: none;
+}
+a:hover{
+    color: #ff6699;
+}
+.center{
+height: 420px;
+background-color: #ff6699;
+}
+footer{
+    height: 30px;
+     background-color: #410c0c;
+     text-align: center;
+     clear: both;
+     padding: 5px;
+    
+}
+.rightsection{
+    
+    padding-top: 30px;
+    height: auto;
+    
+}
+
+.eachcategory
+{
+    border-radius: 30px;
+    background-color: #410c0c;
+    max-width: 250px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+.eachcategory a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.eachcategory a:hover{
+    
+    color: #ff6699;
+}
+.rightsection ul{
+    list-style-type: none;
+}
+.prevnextbtn{
+    position: absolute;
+}
+.prevnextbtnul li{
+    
+    color: #410c0c;
+    display:inline;
+    padding: 2px 2px 2px 2px;
+    
+    
+
+}
+    
+    .nxtbtn {
+     border-radius: 40px 0px 0px 0px;;
+    background-color: #410c0c;
+     color: #ffffff;
+    margin-top: 5px;
+    padding: 3px;
+    text-align: center;
+    
+font-family: "Comic Sans MS", cursive, sans-serif ;
+    }
+     .prebtn {
+     border-radius: 0px 40px 0px 0px;;
+    background-color: #410c0c;
+     color: #ffffff;
+    margin-top: 5px;
+    padding: 3px;
+    text-align: center;
+    
+    font-family: "Comic Sans MS", cursive, sans-serif ;
+
+    }
+    button:disabled {
+    color:#717782;
+}

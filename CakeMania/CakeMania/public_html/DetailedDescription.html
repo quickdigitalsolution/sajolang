@@ -1,0 +1,25 @@
+<div class="rightsection" ng-controller="detaileddescriptioncake" >
+    <span><a>Individual cake details-></a></span>
+    <ul>
+
+        <li  ng-repeat="data in cakesutypesfulldesc">
+
+
+            <table>
+                <tr>
+                    <th>Name</th><td>{{data.name}}</td>
+                </tr>
+                <tr>
+                    <th>Price</th><td>{{data.price}}</td>
+                </tr>
+                <tr>
+                    <th>Weight</th><td>{{data.weight}}</td>
+                </tr>
+
+            </table>
+        </li>
+    </ul> 
+
+
+</div>
+
